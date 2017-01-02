@@ -1,0 +1,22 @@
+<%= form_for @submission, url:{action: "create"} do |f| %>
+<div class="form-group">
+<%=f.label :FULL_NAME%>
+<%=f.text_field :full_name %>
+</div>
+<div class="form-group">
+<%=f.label :EMAIL%>
+<%=f.text_field :email %>
+</div>
+
+<div class="form-group">
+<%=f.label :PROJECT_REPO%>
+<%=f.text_field :project_repo %>
+</div>
+
+<div class="form-group">
+<%=f.label :PROJECT_URL%>
+<%=f.text_field :project_url %>
+</div>
+
+<%=f.submit "Create" %>
+<% end %>
