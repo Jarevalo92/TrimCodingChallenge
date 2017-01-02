@@ -10,31 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170102174117) do
+ActiveRecord::Schema.define(version: 20170102185347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "submissions", force: :cascade do |t|
-    t.string   "Full_Name"
-    t.string   "Email"
-    t.string   "Project_Repo"
-    t.string   "Project_Url"
-    t.integer  "Using_best_practices_for_OOP"
-    t.integer  "Modular_development"
-    t.integer  "Full_stack_workflow_understanding"
-    t.integer  "Testing"
-    t.integer  "Database_knowledge"
-    t.integer  "Debugging"
-    t.integer  "Problem_solving_skills"
-    t.integer  "Javascript"
-    t.integer  "HTML"
-    t.integer  "CSS"
-    t.integer  "Working_on_a_team"
-    t.integer  "Self_motivation"
-    t.integer  "Communication_skills"
-    t.integer  "Your_own_energy_level"
-    t.integer  "Intelligence_Aptitude"
+    t.string   "full_name"
+    t.string   "email"
+    t.string   "project_repo"
+    t.string   "project_url"
+    t.integer  "using_best_practices_for_oop"
+    t.integer  "modular_development"
+    t.integer  "full_stack_workflow_understanding"
+    t.integer  "testing"
+    t.integer  "database_knowledge"
+    t.integer  "debugging"
+    t.integer  "problem_solving_skills"
+    t.integer  "javascript"
+    t.integer  "html"
+    t.integer  "css"
+    t.integer  "working_on_a_team"
+    t.integer  "self_motivation"
+    t.integer  "communication_skills"
+    t.integer  "your_own_energy_level"
+    t.integer  "intelligence_aptitude"
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
   end
