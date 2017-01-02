@@ -6,7 +6,7 @@ class SubmissionsController < ApplicationController
   end
 
   def create
-    @submission = Submission.new(:submission_params)
+    @submission = Submission.new(submission_params)
 
     respond_to do |format|
     if @submission.save
@@ -33,7 +33,7 @@ class SubmissionsController < ApplicationController
 
   private
   def set_submission
-    @submission = Submission.find_by(params[:id])
+    @submission = Submission.find(params[:id])
   end
   def submission_params
     params.require(:submission).permit(:full_name, :email, :project_repo,

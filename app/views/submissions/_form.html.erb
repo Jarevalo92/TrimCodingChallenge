@@ -1,8 +1,10 @@
 <%= form_for @submission, url:{action: "create"} do |f| %>
+
 <div class="form-group">
 <%=f.label :FULL_NAME%>
 <%=f.text_field :full_name %>
 </div>
+
 <div class="form-group">
 <%=f.label :EMAIL%>
 <%=f.text_field :email %>
@@ -17,6 +19,82 @@
 <%=f.label :PROJECT_URL%>
 <%=f.text_field :project_url %>
 </div>
+
+<div class="form-group">
+<%=f.label :USING_BEST_PRACTICES_FOR_OOP%>
+<%=f.text_field :using_best_practices_for_oop%>
+</div>
+
+<div class="form-group">
+<%=f.label :MODULAR_DEVELOPMENT%>
+<%=f.text_field :modular_development%>
+</div>
+
+<div class="form-group">
+<%=f.label :FULLSTACK_WORKFLOW_UNDERSTANDING %>
+<%=f.text_field :full_stack_workflow_understanding %>
+</div>
+
+<div class="form-group">
+<%=f.label :TESTING %>
+<%=f.text_field :testing %>
+</div>
+
+<div class="form-group">
+<%=f.label :DATABASE_KNOWLEDGE%>
+<%=f.text_field :database_knowledge%>
+</div>
+
+<div class="form-group">
+<%=f.label :DEBUGGING%>
+<%=f.text_field :debugging%>
+</div>
+
+<div class="form-group">
+<%=f.label :PROBLEM_SOLVING_SKILLS%>
+<%=f.text_field :problem_solving_skills%>
+</div>
+
+<div class="form-group">
+<%=f.label :JAVASCRIPT%>
+<%=f.text_field :javascript%>
+</div>
+
+<div class="form-group"%>
+<%=f.label :HTML %>
+<%=f.text_field :html %>
+</div>
+
+<div class="form-group">
+<%=f.label :CSS %>
+<%=f.text_field :css %>
+</div>
+
+<div class="form-group">
+<%=f.label :WORKING_ON_A_TEAM%>
+<%=f.text_field :working_on_a_team%>
+</div>
+
+<div class="form-group">
+<%=f.label :SELF_MOTIVATION%>
+<%=f.text_field :self_motivation%>
+</div>
+
+<div class="form-group">
+<%=f.label :COMMUNICATION_SKILLS%>
+<%=f.text_field :communication_skills%>
+</div>
+
+<div class="form-group">
+<%=f.label :YOUR_OWN_ENERGY_LEVEL%>
+<%=f.text_field :your_own_energy_level%>
+</div>
+
+<div class="form-group">
+<%=f.label :INTELLIGENCE_APTITUDE%>
+<%=f.text_field :intelligence_aptitude%>
+</div>
+
 
 <%=f.submit "Create" %>
 <% end %>
