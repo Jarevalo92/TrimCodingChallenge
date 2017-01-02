@@ -19,7 +19,7 @@ class CreateSubmissions < ActiveRecord::Migration[5.0]
       t.integer :Self_motivation
       t.integer :Communication_skills
       t.integer :Your_own_energy_level
-      t.integer :Intelligence/Aptitude
+      t.integer :Intelligence_Aptitude
 
       t.timestamps
     end
