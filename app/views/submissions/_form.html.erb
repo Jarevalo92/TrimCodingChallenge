@@ -1,6 +1,6 @@
 <%= bootstrap_form_for @submission, url:{action: "create"} do |f| %>
 
-<%= f.alert_message "Please fix the errors below." %>
+<%= f.alert_message "Please fix the errors below.",class:"alert" %>
 
 <%=f.text_field :full_name, hide_label: true, placeholder: "FULL NAME" %>
 
@@ -9,6 +9,7 @@
 <%=f.text_field :project_repo, hide_label: true, placeholder: "PROJECT REPO"%>
 
 <%=f.text_field :project_url, hide_label: true, placeholder: "PROJECT URL"%>
+
 <%=f.text_field :using_best_practices_for_oop%>
 
 <%=f.text_field :modular_development%>

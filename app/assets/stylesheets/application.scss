@@ -15,19 +15,42 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "rails_bootstrap_forms";
+
  @font-face {
    font-family: 'museosans';
    src:font-url('assets/fonts/MuseoSans_500-webfont.ttf') ,format('truetype');
-   font-weight: 500;
-   font-style: normal;
  };
+
+ * {
+  border-radius: 0 !important;
+}
 
  body{
    background-color: #3c5e85;
    padding-bottom: 2.5em;
    font-family: 'museosans';
-   color: #bafbdf;
+   color: #e0fbef;
    font-size: 2em;
-   letter-spacing: .25em;
+   letter-spacing: .15em;
+ }
 
+ label{
+   font-weight: 500;
+ }
+ .alert{
+   color: #34c5a4;
+   background-color: #e0fbef;
+ }
+
+ .form-control{
+   height: 5em;
+   margin-top: 4em;
+   margin-bottom: 4em;
+   background-color: #e0fbef;
+   font-size: 1em;
+   padding-left: 2em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   color: #34c5a4;
  }
