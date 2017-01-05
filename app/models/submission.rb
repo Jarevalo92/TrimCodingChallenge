@@ -2,6 +2,7 @@ class Submission < ApplicationRecord
   validates :full_name, presence: true
   validates :email, presence: true
   validates :project_repo, presence: true
+  validates :project_url, presence: true
   validate :sum_equal_to_50
 
 
