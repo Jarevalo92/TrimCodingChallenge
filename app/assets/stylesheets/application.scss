@@ -18,12 +18,16 @@
  @font-face {
    font-family: 'museosans';
    src:font-url('assets/fonts/MuseoSans_500-webfont.ttf') ,format('truetype');
-   font-weight: normal;
+   font-weight: 500;
    font-style: normal;
  };
 
  body{
+   background-color: #3c5e85;
+   padding-bottom: 2.5em;
    font-family: 'museosans';
+   color: #bafbdf;
    font-size: 2em;
    letter-spacing: .25em;
+
  }
