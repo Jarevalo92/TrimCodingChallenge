@@ -1,5 +1,7 @@
 <%= bootstrap_form_for @submission, url:{action: "create"} do |f| %>
 
+<%= f.alert_message "Please fix the errors below." %>
+
 <%=f.text_field :full_name, hide_label: true, placeholder: "FULL NAME" %>
 
 <%=f.text_field :email, hide_label: true, placeholder: "EMAIL"%>
