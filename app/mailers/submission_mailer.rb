@@ -1,10 +1,10 @@
 class SubmissionMailer < ApplicationMailer
-  default from: "john.arevalo11@gmail.com"
+  default from: 'trimquestionnaire@test.co'
 
   def submission_results(submission)
     @submission = submission
    mail(
-     to: @submission.email,
+     to: @submission.recipient,
      subject: "Coding Challenge Submission results"
      )
   end

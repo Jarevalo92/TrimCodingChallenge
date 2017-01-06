@@ -3,6 +3,7 @@ class Submission < ApplicationRecord
   validates :email, presence: true
   validates :project_repo, presence: true
   validates :project_url, presence: true
+  validates :recipient, presence: true
   validate :sum_equal_to_50
 
 
@@ -23,4 +24,6 @@ class Submission < ApplicationRecord
     errors.add(:base, "total assessment must equal 50!")
     end
   end
+
+
 end
