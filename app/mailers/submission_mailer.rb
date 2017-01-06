@@ -4,8 +4,8 @@ class SubmissionMailer < ApplicationMailer
   def submission_results(submission)
     @submission = submission
    mail(
-     to: 'john.arevalo11@gmail.com',
-     subject: "Here are the results of my Submission"
+     to: @submission.email,
+     subject: "Coding Challenge Submission results"
      )
   end
 end
