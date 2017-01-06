@@ -1,4 +1,4 @@
-/*
+  /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -53,4 +53,24 @@
    padding-top: 2em;
    padding-bottom: 2em;
    color: #34c5a4;
+   letter-spacing: .15em;
  }
+
+ .btn-danger{
+   letter-spacing: .15em;
+ }
+
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #34c5a4;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #34c5a4;
+   opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #34c5a4;
+   opacity:  1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #34c5a4;
+}

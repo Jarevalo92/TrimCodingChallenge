@@ -10,35 +10,79 @@
 
 <%=f.text_field :project_url, hide_label: true, placeholder: "PROJECT URL"%>
 
-<%=f.text_field :using_best_practices_for_oop%>
+<div class="row">
+<div class="col-lg-8"><label>USING BEST PRACTICES FOR OOP:</label></div>
+<div class="col-lg-4"><%=f.text_field :using_best_practices_for_oop, hide_label: true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :modular_development%>
+<div class="row">
+<div class="col-lg-8"><span>MODULAR DEVELOPMENT:</span></div>
+<div class="col-lg-4"><%=f.text_field :modular_development, hide_label:true, style:"width:7em; float:right;"%></div>
+</div>
+<div class="row">
+<div class="col-lg-8"><label>FULL STACK WORKFLOW UNDERSTANDING:</label></div>
+<div class="col-lg-4"><%=f.text_field :full_stack_workflow_understanding, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :full_stack_workflow_understanding%>
+<div class="row">
+<div class="col-lg-8"><label>TESTING:</label></div>
+<div class="col-lg-4"><%=f.text_field :testing, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :testing%>
+<div class="row">
+<div class="col-lg-8"<label>DATABASE KNOWLEDGE:</label></div>
+<div class="col-lg-4"><%=f.text_field :database_knowledge, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :database_knowledge%>
+<div class="row">
+<div class="col-lg-8"><label>DEBUGGING:</label></div>
+<div class="col-lg-4"><%=f.text_field :debugging, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :debugging%>
+<div class="row">
+<div class="col-lg-8"><label>PROBLEM SOLVING SKILLS:</label></div>
+<div class="col-lg-4"><%=f.text_field :problem_solving_skills, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :problem_solving_skills%>
+<div class="row">
+<div class="col-lg-8"><label>JAVASCRIPT:</label></div>
+<div class="col-lg-4"><%=f.text_field :javascript, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :javascript%>
+<div class="row">
+<div class="col-lg-8"><label>HTML:</label></div>
+<div class="col-lg-4"><%=f.text_field :html , hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :html %>
+<div class="row">
+<div class="col-lg-8"><label>CSS:</label></div>
+<div class="col-lg-4"><%=f.text_field :css, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :css%>
+<div class="row">
+<div class="col-lg-8"><label>WORKING ON A TEAM:</label></div>
+<div class="col-lg-4"><%=f.text_field :working_on_a_team, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :working_on_a_team%>
+<div class="row">
+<div class="col-lg-8"><label>SELF MOTIVATION:</label></div>
+<div class="col-lg-4"><%=f.text_field :self_motivation, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :self_motivation%>
+<div class="row">
+<div class="col-lg-8"><label>COMMUNICATION SKILLS:</label></div>
+<div class="col-lg-4"><%=f.text_field :communication_skills, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :communication_skills%>
+<div class="row">
+<div class="col-lg-8"><label>YOUR OWN ENERGY LEVEL:</label></div>
+<div class="col-lg-4"><%=f.text_field :your_own_energy_level, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
-<%=f.text_field :your_own_energy_level%>
-
-<%=f.text_field :intelligence_aptitude%>
+<div class="row">
+<div class="col-lg-8"><label>INTELLIGENCE/APTITUDE:</label></div>
+<div class="col-lg-4"><%=f.text_field :intelligence_aptitude, hide_label:true, style: "width:7em; float:right;"%></div>
+</div>
 
 <%=f.submit "SUBMIT", class:"btn-danger", style: "height:4em; width:100%; margin-top:1em;" %>
 <% end %>
